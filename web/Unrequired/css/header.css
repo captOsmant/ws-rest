@@ -1,0 +1,18 @@
+ol{
+    display: block;
+    background: #333;
+
+}
+ol li{
+    display: inline-block;
+
+}
+ol li a{
+    display:block;
+    padding: 10px 15px;
+    color: #fff;
+}
+ol li a:hover{
+    background: #fff;
+    color: #333;
+}

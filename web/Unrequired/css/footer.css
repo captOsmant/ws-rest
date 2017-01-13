@@ -1,0 +1,19 @@
+@keyframes rotate{
+
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+
+img#logo{
+    display: inline-block;
+    animation: rotate 5s infinite linear;
+    float: left;
+    margin-right: 1%;
+    width: 60px;
+}
+html body h2{
+  padding-top: 15px;
+}

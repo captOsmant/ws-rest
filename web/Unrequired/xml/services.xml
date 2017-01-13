@@ -1,0 +1,38 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="/xslt/service.xsl" ?>
+<services>
+    <service>
+        <id>1</id>
+        <title>Курсы по программированию на С++ </title>
+        <img> /img/services/1.jpg</img>
+        <price> 1 300 000 р./мес. </price>
+    </service>
+
+    <service>
+        <id>2</id>
+        <title>Курсы по программированию на Python </title>
+        <img> /img/services/2.jpg</img>
+        <price> 2 600 000 р./мес. </price>
+    </service>
+
+    <service>
+        <id>3</id>
+        <title>Курсы по программированию на Java </title>
+        <img> /img/services/3.jpg</img>
+        <price> 1 800 000 р./мес. </price>
+    </service>
+
+    <service>
+        <id>4</id>
+        <title>Курсы по программированию на Perl </title>
+        <img> /img/services/4.png</img>
+        <price> 1 700 000 р./мес. </price>
+    </service>
+
+    <service>
+        <id>5</id>
+        <title>Курсы по программированию на PHP </title>
+        <img> /img/services/5.png</img>
+        <price> 3 500 000 р./мес. </price>
+    </service>
+</services>

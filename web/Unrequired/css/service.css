@@ -1,0 +1,12 @@
+li{
+    display:block;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+img{
+    width:100px;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}

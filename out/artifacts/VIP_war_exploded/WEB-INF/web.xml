@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/api</url-pattern>
+    </servlet-mapping>
+
+
+
+    <!-- GET /api/cities/ -->
+    <servlet>
+        <servlet-name>CitiesServlet</servlet-name>
+        <servlet-class>CitiesServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CitiesServlet</servlet-name>
+        <url-pattern>/api/cities/</url-pattern>
+    </servlet-mapping>
+
+    <!-- GET /api/places/?id={id}-->
+    <servlet>
+        <servlet-name>PlacesServlet</servlet-name>
+        <servlet-class>PlacesServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>PlacesServlet</servlet-name>
+        <url-pattern>/api/places/</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- POST /api/reivews/ -->
+    <servlet>
+        <servlet-name>ReviewsServlet</servlet-name>
+        <servlet-class>ReviewsServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ReviewsServlet</servlet-name>
+        <url-pattern>/api/reviews/</url-pattern>
+    </servlet-mapping>
+    
+    <!-- HEAD /api/token-->
+    <servlet>
+        <servlet-name>AuthServlet</servlet-name>
+        <servlet-class>AuthServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AuthServlet</servlet-name>
+        <url-pattern>/api/token/</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- GET /api/countries-->
+    <servlet>
+        <servlet-name>CountriesServlet</servlet-name>
+        <servlet-class>CountriesServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CountriesServlet</servlet-name>
+        <url-pattern>/api/countries/</url-pattern>
+    </servlet-mapping>
+</web-app>
