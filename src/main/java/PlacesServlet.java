@@ -1,3 +1,4 @@
+import utils.Console;
 import utils.DBConnection;
 
 import javax.servlet.Servlet;
@@ -21,7 +22,9 @@ public class PlacesServlet extends HttpServlet implements Servlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response){
         DBConnection con = new DBConnection();
         int city_id = Integer.valueOf(request.getParameter("id"));
-        if(city_id <=0 ) return;
+        if(city_id <=0) return;
+
+
 
         try{
             ResultSet res = con.execSelect("SELECT * FROM places WHERE city_id="+city_id);

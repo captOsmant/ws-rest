@@ -103,7 +103,7 @@ var App = {
         init: function(){
             if(localStorage.token){
                 console.info("Checking up token found locally");
-                App.Data.doHead("/api/token/", {token: localStorage.token}, function(x,e){
+                App.Data.doHead("/api/token/"+localStorage.token, {}, function(x,e){
 
                     var role = x.getResponseHeader("X-Role");
                     if(role*1) {
@@ -379,7 +379,7 @@ var App = {
     ,City: {
         init: function(e){
             _.E.cityData = e;
-            App.Data.getJSON("/api/places/",function(d){
+            App.Data.getJSON("/api/places/"+ e.id,function(d){
                 console.log(d);
                 _.E.cityData = d;
                 d.forEach(function(e){
@@ -387,18 +387,18 @@ var App = {
                 })
             }, function(e){
                 console.error(e);
-            },{id: e.id});
+            },{});
         }
 
         ,Reviews:{
             list: function(id){
-                App.Data.getJSON("/api/reviews/", function(d){
+                App.Data.getJSON("/api/reviews/"+id, function(d){
                     _.$("#reviewList .reviews").fromTemplate("review", d);
                     console.log(d);
 
                 }, function(e){
                     console.error(e)
-                },{id:id});
+                },{});
 
                 App.Popups.ReviewList.open(function(){
 

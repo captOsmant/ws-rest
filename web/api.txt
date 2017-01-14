@@ -1,0 +1,9 @@
+HEAD    /api/token/:token
+HEAD    /api/token/?login=:login&password=:password
+GET     /api/countries
+DELETE  /api/countries/?id=:id&token=:token
+POST    /api/countries
+GET     /api/cities
+GET     /api/places/:id
+GET     /api/reviews/:id
+POST    /api/reviews/

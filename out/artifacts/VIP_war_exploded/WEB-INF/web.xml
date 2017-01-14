@@ -73,4 +73,20 @@
         <servlet-name>CountriesServlet</servlet-name>
         <url-pattern>/api/countries/</url-pattern>
     </servlet-mapping>
+
+    
+    <servlet>
+        <servlet-name>404</servlet-name>
+        <servlet-class>Servlet404</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>404</servlet-name>
+        <url-pattern>/Servlet404</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/Servlet404</location>
+    </error-page>
 </web-app>
